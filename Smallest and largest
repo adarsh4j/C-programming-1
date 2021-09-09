@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+
+
+
+
+
+int main() 
+
+{
+
+    int array[10]={1,2,3,4,10,43,3,56,1,9},j,min,max;
+
+    
+ // ");
+    //scanf("%d",&x);
+
+    
+
+   // for(j=0;j<x;j++)
+
+    //{
+
+      //  scanf("%d ",&array[j]);
+//
+ // }
+
+    
+
+    max = min = array[0];
+
+    
+
+    for(j=1;j<10;j++)
+
+    {
+
+        if(array[j]<min)
+
+        {
+
+            min = array[j];
+
+        }
+
+        
+
+        if(array[j]>max)
+
+        {
+
+            max = array[j];
+
+        }
+
+    }
+
+    
+
+    printf("\nThe largest value is %d\n",min);
+
+    printf("The smallest value is %d",max);
+
+     
+
+    return 0;
+
+}
