@@ -1,0 +1,71 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+   int a[10],i,j,f,n;
+
+   printf("Enter the number\n");
+
+   scanf("%d",&n);
+
+   for(i=0;i<n;i++)
+
+   {
+
+       printf("Enter the elements %d : ",i+1);
+
+       scanf("%d",&a[i]);
+
+   } 
+
+   printf("The array's are : ");
+
+   for(i=0;i<n;i++)
+
+   {
+
+        
+
+       printf("%d\t",a[i]);
+
+   } 
+
+   printf("\nThe prime number in list is : ");
+
+   for(i=0;i<n;i++)
+
+     
+
+   { 
+
+       for(j=2,f=0;j<=(a[i]/2);j++)
+
+       {
+
+            if(a[i]%j==0)
+
+            {
+
+                f=1;
+
+                break;
+
+            }
+
+       }
+
+            if(f==0)
+
+            {
+
+              printf("%d ",a[i]);
+
+            }
+
+   }
+
+return 0;
+
+}
